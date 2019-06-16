@@ -30,7 +30,6 @@ export default class App extends React.Component {
         {this.state.isLoggedIn ? (
           <>
             <p>Logged in</p>
-            <button onClick={() => firebase.auth().signOut()}>Sign out</button>
             <p>hello {firebase.auth().currentUser.displayName}</p>
           </>
         ) : (
